@@ -1,0 +1,5 @@
+Median value imputation is a technique used to handle missing data by replacing missing values with the median value of the available data for that attribute. This method is simple and robust, especially when dealing with outliers or skewed data distributions.
+
+Advantages of median value imputation include its robustness to outliers. Since the median is not influenced by extreme values, this method can provide a more accurate central tendency measure for datasets with outliers. Additionally, median imputation is straightforward to implement and computationally efficient, making it suitable for large datasets or real-time applications.
+
+However, there are disadvantages to using median value imputation. One significant drawback is that it can introduce bias into the dataset, particularly if the data are not missing completely at random (MCAR). Median imputation does not consider the relationships between variables, potentially leading to inaccurate imputations and distorted statistical analyses. Furthermore, by replacing missing values with a single value, the method underestimates the variability in the data, which can affect downstream analyses and modeling

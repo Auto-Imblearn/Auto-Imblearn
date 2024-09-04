@@ -1,0 +1,27 @@
+The MWMOTE (Majority Weighted Minority Oversampling Technique) is designed to handle imbalanced data sets, which present a challenge to classifiers due to the unequal distribution of data samples among different classes. In such data sets, the minority class is often underrepresented, making it difficult for classifiers to learn from these samples effectively. MWMOTE addresses this issue by generating synthetic minority class samples to balance the distribution between majority and minority classes.
+
+The MWMOTE method begins by identifying the hard-to-learn and informative minority class samples. It assigns weights to these samples based on their Euclidean distance from the nearest majority class samples. This weighting process is crucial because it ensures that the most informative and challenging samples are given more importance in the synthetic sample generation process. The closer a minority class sample is to the majority class samples, the higher its weight, indicating its importance in learning the decision boundary.
+
+The next step involves generating synthetic samples from the weighted informative minority class samples. This is done using a clustering approach, which ensures that all generated synthetic samples lie within some minority class cluster. The clustering approach helps maintain the structure and distribution of the minority class, preventing the generation of synthetic samples that might overlap with the majority class and thus be misclassified.
+
+To handle noise in the data, MWMOTE filters out noisy minority class samples by removing those that are surrounded only by majority class samples. This step ensures that the synthetic samples are generated from clean and informative data points, improving the overall quality of the generated samples and the performance of the classifier.
+
+The process of MWMOTE can be broken down into several phases. Initially, the method filters out noisy samples to create a filtered minority set. It then constructs a set of borderline majority class samples, which are the majority samples nearest to the minority samples. Using these borderline majority samples, the method identifies the informative minority class samples that are likely to be close to the decision boundary. Each of these informative samples is then assigned a weight based on its importance, which is calculated using the closeness and density factors. The closeness factor ensures that samples closer to the decision boundary are given higher weights, while the density factor ensures that samples in sparse regions are prioritized over those in dense regions.
+
+Finally, synthetic samples are generated within clusters of minority class samples. This clustering-based approach ensures that the synthetic samples remain within the minority class regions and do not intrude into the majority class regions, thus preserving the integrity of the minority class distribution. The generated synthetic samples are then added to the original minority set to create a balanced data set.
+
+MWMOTE has been evaluated extensively on both artificial and real-world data sets. The results show that it performs better than or is comparable to other existing oversampling methods like SMOTE, ADASYN, and RAMO in terms of various assessment metrics such as geometric mean (G-mean) and area under the receiver operating curve (AUC). This demonstrates its effectiveness in improving the learning of minority class samples in imbalanced data sets, making it a valuable tool for addressing imbalanced learning problems.
+
+The real-world datasets were selected from various domains to cover a range of characteristics. For example, the Glass Identification Dataset classifies types of glass based on their chemical properties, with 214 instances, 9 features, and 6 classes. It has an imbalance ratio where the most frequent class has significantly more instances than the least frequent class.
+
+The Vehicle Silhouette Dataset classifies vehicle types based on their silhouette features. It has 846 instances, 18 features, and 4 classes, with an imbalance that is less extreme compared to medical datasets.
+
+The Satimage Dataset classifies satellite images into different land cover types. It contains 6435 instances, 36 features, and 6 classes, with one class being significantly underrepresented compared to others.
+
+The Breast Cancer Wisconsin (Original) Dataset classifies breast cancer tumors as benign or malignant. It consists of 699 instances, 9 features, and 2 classes, with an imbalance ratio of approximately 65.5% benign and 34.5% malignant.
+
+The Breast Tissue Dataset classifies different types of breast tissue samples, with 106 instances, 9 features, and 6 classes. It has a significant imbalance, with some tissue types being rare.
+
+The Pima Indians Diabetes Dataset predicts diabetes occurrence based on diagnostic measurements. It includes 768 instances, 8 features, and 2 classes, with an imbalance ratio of 65.1% non-diabetic and 34.9% diabetic.
+
+The Yeast Dataset predicts the localization sites of proteins in yeast cells. It contains 1484 instances, 8 features, and 10 classes, with a high imbalance, as some protein localization sites are rare.

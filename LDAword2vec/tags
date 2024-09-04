@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GetSentence	/Users/HankWang/Documents/Research_Project/Code/LDA/provide_sentence.py	/^class GetSentence(object):$/;"	c	language:Python
+ID	/Users/HankWang/Documents/Research_Project/Code/LDA/token2matrix.py	/^ID = 0$/;"	v	language:Python
+__init__	/Users/HankWang/Documents/Research_Project/Code/LDA/provide_sentence.py	/^    def __init__(self, dirName):$/;"	m	language:Python	class:GetSentence
+__iter__	/Users/HankWang/Documents/Research_Project/Code/LDA/provide_sentence.py	/^    def __iter__(self):$/;"	m	language:Python	class:GetSentence	file:
+build_index	/Users/HankWang/Documents/Research_Project/Code/LDA/process_index.py	/^def build_index():$/;"	f	language:Python
+build_inverse	/Users/HankWang/Documents/Research_Project/Code/LDA/inverse_index.py	/^def build_inverse(tf):$/;"	f	language:Python
+concept_search	/Users/HankWang/Documents/Research_Project/Code/LDA/doc_search.py	/^def concept_search($/;"	f	language:Python
+convert_number	/Users/HankWang/Documents/Research_Project/Code/LDA/token2matrix.py	/^def convert_number(word):$/;"	f	language:Python
+display_docs	/Users/HankWang/Documents/Research_Project/Code/LDA/matrix2LDA.py	/^def display_docs(model, doc_names, no_top_words, tf):$/;"	f	language:Python
+display_topic	/Users/HankWang/Documents/Research_Project/Code/LDA/matrix2LDA.py	/^def display_topic(model, feature_names, no_top_words):$/;"	f	language:Python
+doc2array	/Users/HankWang/Documents/Research_Project/Code/LDA/doc2token.py	/^def doc2array():$/;"	f	language:Python
+extract_matrix	/Users/HankWang/Documents/Research_Project/Code/LDA/token2matrix.py	/^def extract_matrix():$/;"	f	language:Python
+fetch_index	/Users/HankWang/Documents/Research_Project/Code/LDA/process_index.py	/^def fetch_index():$/;"	f	language:Python
+find_docs	/Users/HankWang/Documents/Research_Project/Code/LDA/doc_search.py	/^def find_docs(reversed_index, que_tf, num_doc, tf_vectorizer, wordToVec):$/;"	f	language:Python
+find_same_ele	/Users/HankWang/Documents/Research_Project/Code/LDA/doc_search.py	/^def find_same_ele(list1, list2):$/;"	f	language:Python
+fit_model	/Users/HankWang/Documents/Research_Project/Code/LDA/matrix2LDA.py	/^def fit_model():$/;"	f	language:Python
+fitted_lda	/Users/HankWang/Documents/Research_Project/Code/LDA/process_index.py	/^fitted_lda = None$/;"	v	language:Python
+get_index	/Users/HankWang/Documents/Research_Project/Code/LDA/search.py	/^def get_index():$/;"	f	language:Python
+get_input	/Users/HankWang/Documents/Research_Project/Code/LDA/search.py	/^def get_input():$/;"	f	language:Python
+hi	/Users/HankWang/Documents/Research_Project/Code/LDA/provide_sentence.py	/^    hi = GetSentence("test")$/;"	v	language:Python	class:GetSentence
+index_flag	/Users/HankWang/Documents/Research_Project/Code/LDA/process_index.py	/^index_flag = False$/;"	v	language:Python
+init	/Users/HankWang/Documents/Research_Project/Code/LDA/setting.py	/^def init():$/;"	f	language:Python
+init_stemmer	/Users/HankWang/Documents/Research_Project/Code/LDA/token2matrix.py	/^def init_stemmer():$/;"	f	language:Python
+lda_tokenizer	/Users/HankWang/Documents/Research_Project/Code/LDA/token2matrix.py	/^def lda_tokenizer(raw):$/;"	f	language:Python
+print_docNames	/Users/HankWang/Documents/Research_Project/Code/LDA/search.py	/^def print_docNames(final_docs, doc_names, num_doc):$/;"	f	language:Python
+project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
+regular_search	/Users/HankWang/Documents/Research_Project/Code/LDA/doc_search.py	/^def regular_search(reversed_index, que_tf):$/;"	f	language:Python
+search	/Users/HankWang/Documents/Research_Project/Code/LDA/search.py	/^def search():$/;"	f	language:Python
+set_prefs	.ropeproject/config.py	/^def set_prefs(prefs):$/;"	f
+sorting_docs	/Users/HankWang/Documents/Research_Project/Code/LDA/sorting_docs.py	/^def sorting_docs(final_docs, doc_topic_index, que_dis):$/;"	f	language:Python
+train_word2vec	/Users/HankWang/Documents/Research_Project/Code/LDA/wordToVec.py	/^def train_word2vec():$/;"	f	language:Python
+union_lists	/Users/HankWang/Documents/Research_Project/Code/LDA/doc_search.py	/^def union_lists(reversed_index, terms, query_term):$/;"	f	language:Python
+word_tokennizer	/Users/HankWang/Documents/Research_Project/Code/LDA/provide_sentence.py	/^    def word_tokennizer(self, sentence):$/;"	m	language:Python	class:GetSentence

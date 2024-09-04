@@ -1,0 +1,7 @@
+Random over sampling (ROS) involves replicating the minority class instances to balance the class distribution in imbalanced datasets. This technique has several advantages and disadvantages.
+
+One of the primary advantages of ROS is its ability to balance class distributions without losing any information from the majority class. This is particularly useful because it ensures that no potentially valuable data is discarded, which can happen with under sampling methods. Additionally, ROS is simple to implement and can improve the performance of classifiers on the minority class by providing more examples for the learning process. This can lead to a more accurate decision boundary that better represents the minority class.
+
+However, ROS also has significant disadvantages. One major drawback is the increased risk of overfitting. Since ROS involves duplicating existing minority class instances, the classifier might become too attuned to these replicated examples and perform poorly on unseen data. This happens because the duplicated data does not add any new information, only reiterating what the classifier has already seen. Another disadvantage is that ROS can lead to longer training times and increased computational costs due to the larger size of the training dataset after oversampling.
+
+In summary, while ROS can effectively address class imbalance without losing valuable data, it must be used carefully to avoid overfitting and manage the increased computational burden.
